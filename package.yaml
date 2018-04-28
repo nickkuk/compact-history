@@ -1,0 +1,27 @@
+name: compact-history
+version: 0.0.1
+author: [
+    Nikolai Kuklin <nickkuklin@gmail.com>
+  ]
+copyright: (c) Nikolai Kuklin <nickkuklin@gmail.com>
+
+ghc-options: [
+    -O2, -Wall,
+    -Wincomplete-uni-patterns, -Wincomplete-record-updates, -Wredundant-constraints,
+    -fprint-explicit-foralls, -fprint-explicit-kinds
+  ]
+
+default-extensions: [
+    OverloadedStrings, LambdaCase, FlexibleInstances,
+    FlexibleContexts, GeneralizedNewtypeDeriving, ScopedTypeVariables
+  ]
+
+executables:
+  compact-history:
+    source-dirs: src
+    main: Main.hs
+    ghc-options: [-threaded, -rtsopts]
+    dependencies: [
+        base,
+        compact
+      ]

@@ -1,0 +1,7 @@
+local-bin-path: bin
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
+extra-deps: []
+resolver: nightly-2018-01-15
